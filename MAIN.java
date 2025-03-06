@@ -88,3 +88,12 @@ class Main {
         System.out.println("Perimeter of Cuboid: " + cuboid.calculatePerimeter());
         System.out.println("Volume of Cuboid: " + cuboid.calculateVolume());
     }
+    
+    // Process Square calculations
+    public static void processSquare(Scanner scan) {
+        System.out.print("Enter side length of Square: ");
+        double side = scan.nextDouble();
+        Square square = new Square(side);
+        System.out.println("Area of Square: " + square.calculateArea());
+        System.out.println("Perimeter of Square: " + square.calculatePerimeter());
+    }
