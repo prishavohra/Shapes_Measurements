@@ -11,3 +11,21 @@ public class EquilateralPyramid extends Shape implements Volume {
         this.base = base;
         this.height = height;
     }
+    
+    public double calculateArea() {
+        // Calculate slant height: √((base/2)² + height²)
+        double slantHeight = Math.sqrt((base / 2) * (base / 2) + height * height);
+        double lateralArea = 2 * base * slantHeight;
+        double baseArea = base * base;
+        return baseArea + lateralArea;
+    }
+    
+    public double calculatePerimeter() {
+        return 4 * base;
+    }
+    
+    public double calculateVolume() {
+        return (base * base * height) / 3.0;
+    }
+}
+
