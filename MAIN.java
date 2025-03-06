@@ -54,3 +54,15 @@ class Main {
         scan.close();
     }
     
+    // Process Rectangle calculations
+    public static void processRectangle(Scanner scan) {
+        System.out.print("Enter length of Rectangle: ");
+        double length = scan.nextDouble();
+        System.out.print("Enter width of Rectangle: ");
+        double width = scan.nextDouble();
+        Rectangle rect = new Rectangle(length, width);
+        System.out.println("Area of Rectangle: " + rect.calculateArea());
+        System.out.println("Perimeter of Rectangle: " + rect.calculatePerimeter());
+        System.out.println("Number of sides: " + rect.getNumSides());
+    }
+    
