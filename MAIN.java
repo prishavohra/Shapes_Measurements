@@ -97,3 +97,12 @@ class Main {
         System.out.println("Area of Square: " + square.calculateArea());
         System.out.println("Perimeter of Square: " + square.calculatePerimeter());
     }
+    
+    // Process Sphere calculations
+    public static void processSphere(Scanner scan) {
+        System.out.print("Enter radius of Sphere: ");
+        double radius = scan.nextDouble();
+        Sphere sphere = new Sphere(radius);
+        System.out.println("Surface Area of Sphere: " + sphere.calculateArea());
+        System.out.println("Volume of Sphere: " + sphere.calculateVolume());
+    }
