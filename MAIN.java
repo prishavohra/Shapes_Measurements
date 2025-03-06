@@ -117,3 +117,16 @@ class Main {
         System.out.println("Surface Area of Cylinder: " + cylinder.calculateArea());
         System.out.println("Volume of Cylinder: " + cylinder.calculateVolume());
     }
+    
+    // Process Equilateral Pyramid calculations
+    public static void processEquilateralPyramid(Scanner scan) {
+        System.out.print("Enter base side length of Equilateral Pyramid: ");
+        double base = scan.nextDouble();
+        System.out.print("Enter height of Equilateral Pyramid: ");
+        double height = scan.nextDouble();
+        EquilateralPyramid pyramid = new EquilateralPyramid(base, height);
+        System.out.println("Surface Area of Equilateral Pyramid: " + pyramid.calculateArea());
+        System.out.println("Base Perimeter of Equilateral Pyramid: " + pyramid.calculatePerimeter());
+        System.out.println("Volume of Equilateral Pyramid: " + pyramid.calculateVolume());
+    }
+}
