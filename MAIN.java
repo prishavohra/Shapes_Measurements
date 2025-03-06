@@ -74,3 +74,17 @@ class Main {
         System.out.println("Area of Circle: " + circle.calculateArea());
         System.out.println("Perimeter (Circumference) of Circle: " + circle.calculatePerimeter());
     }
+    
+    // Process Cuboid calculations
+    public static void processCuboid(Scanner scan) {
+        System.out.print("Enter length of Cuboid: ");
+        double length = scan.nextDouble();
+        System.out.print("Enter width of Cuboid: ");
+        double width = scan.nextDouble();
+        System.out.print("Enter height of Cuboid: ");
+        double height = scan.nextDouble();
+        Cuboid cuboid = new Cuboid(length, width, height);
+        System.out.println("Area of Cuboid: " + cuboid.calculateArea());
+        System.out.println("Perimeter of Cuboid: " + cuboid.calculatePerimeter());
+        System.out.println("Volume of Cuboid: " + cuboid.calculateVolume());
+    }
