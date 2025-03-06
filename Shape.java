@@ -27,3 +27,12 @@ abstract class Shape {
     public Shape(double dim_one, double dim_two, double dim_three, int num_sides){
         this(dim_one, dim_two, dim_three, num_sides, "");
     }
+    
+    // Abstract method to calculate area (or surface area for 3D shapes)
+    abstract public double calculateArea();
+    
+    // Abstract method to calculate perimeter (or base perimeter for some 3D shapes)
+    abstract public double calculatePerimeter();
+    
+    // Abstract method to calculate volume (for 3D shapes; for 2D shapes, return 0)
+    abstract public double calculateVolume();
