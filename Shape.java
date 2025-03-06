@@ -14,3 +14,11 @@ abstract class Shape {
         shapeName = "";
     }
     
+    // Parameterized Constructor with shape name
+    public Shape(double dim_one, double dim_two, double dim_three, int num_sides, String shapeName){
+        this.dim_one = dim_one;
+        this.dim_two = dim_two;
+        this.dim_three = dim_three;
+        this.num_sides = num_sides;
+        this.shapeName = shapeName;
+    }
