@@ -8,3 +8,10 @@ public class Square extends Rectangle {
         // Override the shape name to "Square"
         this.shapeName = "Square";
     }
+    
+    // Inherits calculateArea() and calculatePerimeter() from Rectangle
+
+    public double calculateVolume() {
+        return 0.0;
+    }
+}
