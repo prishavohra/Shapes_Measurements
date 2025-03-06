@@ -36,3 +36,15 @@ abstract class Shape {
     
     // Abstract method to calculate volume (for 3D shapes; for 2D shapes, return 0)
     abstract public double calculateVolume();
+    
+    // Getter for the number of sides
+    public int getNumSides(){
+        return num_sides;
+    }
+    
+    // Getter for the shape name
+    public String getShapeName(){
+        return shapeName;
+    }
+}
+
