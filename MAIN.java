@@ -106,3 +106,14 @@ class Main {
         System.out.println("Surface Area of Sphere: " + sphere.calculateArea());
         System.out.println("Volume of Sphere: " + sphere.calculateVolume());
     }
+
+    // Process Cylinder calculations
+    public static void processCylinder(Scanner scan) {
+        System.out.print("Enter radius of Cylinder: ");
+        double radius = scan.nextDouble();
+        System.out.print("Enter height of Cylinder: ");
+        double height = scan.nextDouble();
+        Cylinder cylinder = new Cylinder(radius, height);
+        System.out.println("Surface Area of Cylinder: " + cylinder.calculateArea());
+        System.out.println("Volume of Cylinder: " + cylinder.calculateVolume());
+    }
