@@ -66,3 +66,11 @@ class Main {
         System.out.println("Number of sides: " + rect.getNumSides());
     }
     
+    // Process Circle calculations
+    public static void processCircle(Scanner scan) {
+        System.out.print("Enter radius of Circle: ");
+        double radius = scan.nextDouble();
+        Circle circle = new Circle(radius);
+        System.out.println("Area of Circle: " + circle.calculateArea());
+        System.out.println("Perimeter (Circumference) of Circle: " + circle.calculatePerimeter());
+    }
