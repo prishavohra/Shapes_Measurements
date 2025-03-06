@@ -22,3 +22,8 @@ abstract class Shape {
         this.num_sides = num_sides;
         this.shapeName = shapeName;
     }
+    
+    // Existing constructor for backwards compatibility (sets empty shapeName)
+    public Shape(double dim_one, double dim_two, double dim_three, int num_sides){
+        this(dim_one, dim_two, dim_three, num_sides, "");
+    }
