@@ -9,3 +9,16 @@ public class Sphere extends Shape implements Volume {
         super(radius, 0, 0, 0, "Sphere"); // For sphere, number of sides is not applicable (set to 0)
         this.radius = radius;
     }
+
+    public double calculateArea() {
+        return 4 * Math.PI * radius * radius;
+    }
+    
+    public double calculatePerimeter() {
+        return 0;
+    }
+    
+    public double calculateVolume() {
+        return (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
+    }
+}
