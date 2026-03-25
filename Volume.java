@@ -5,3 +5,5 @@
 public interface Volume {
     double calculateVolume();
 }
+
+//Error in Volume function fixed
